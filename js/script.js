@@ -49,7 +49,7 @@ function lerp(start, end, amount) {
   
   function mousedown(e) {
     gsap.to(cursor, { scale: 20, ease: "bounce" });
-    gsap.to(cursorF, { scale: 1, ease: "bounce" });
+    gsap.to(cursorF, { scale: .5, ease: "bounce" });
   
     clicked = true;
     startY = e.clientY || e.touches[0].clientY || e.targetTouches[0].clientY;
